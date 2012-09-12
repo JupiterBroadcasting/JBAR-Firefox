@@ -1,0 +1,2 @@
+content jbar chrome/content/
+overlay chrome://browser/content/browser.xul chrome://jbar/content/overlay.xul
