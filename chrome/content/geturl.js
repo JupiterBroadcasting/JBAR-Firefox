@@ -1,13 +1,15 @@
 (function(){
+	'use strict';
 	var urlChangeListener = {
 		onLocationChange: function(aWebProgress, aRequest, aLocation) {
+			var url,tag,sites,s,win;
 			if (aLocation) {
-				var url = aLocation.spec;
-				var tag = null;
-				
-				var sites = {
+				url = aLocation.spec;
+				tag = null;
+				sites = {
 							amazon:     { rx: /^http.*?amazon.com.*?(\/dp\/|obidos.tg.detail|.gp.product)/i, tag:"tag=thelinactsho-20"},
 							amazonuk:   { rx: /^http.*?amazon.co.uk.*?(\/dp\/|obidos.tg.detail|.gp.product)/i, tag:"tag=jupitebroadc-21"}, 
+							amazonde:   { rx: /^http.*?amazon.de.*?(\/dp\/|obidos.tg.detail|.gp.product)/i, tag:"tag=jupitebroad02-21"}, 
 							audible:    { rx: /^http.*?audible.com/i, tag:"source_code=COMA0230WS012110&AID=10298646&PID=4897915"}, 
 							mint:       { rx: /^http.*?mint.com/i, tag:"PID=4897915&priorityCode=4216102399&source=cj_pfm"},
 							bestbuy:    { rx: /^http.*?bestbuy.com.site.*?\?id=/i, tag:"AID=10483113&PID=4897915&ref=39&CJPID=4897915&loc=01"},
@@ -17,11 +19,10 @@
                             guitarcenter:   { rx: /^http.*?guitarcenter.com/i, tag:"CJAID=10453836&CJPID=4897915"}
                             
 				};			
-				
 				for(s in sites) {
 					if (url.match(sites[s].rx)) {
-						if (url.indexOf(sites[s].tag) == -1) {
-							var win = aWebProgress.DOMWindow; 
+						if (url.indexOf(sites[s].tag) === -1) {
+							win = aWebProgress.DOMWindow; 
 							
 							win.document.location.replace(url+(url.indexOf("?") >=0 ? "&" : "?")+sites[s].tag);
 							
