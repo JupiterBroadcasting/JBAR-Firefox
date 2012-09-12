@@ -6,7 +6,7 @@
   <Description about="urn:mozilla:install-manifest">
     <em:id>jbar@jupiterbroadcasting.com</em:id>
 	<em:unpack>true</em:unpack>
-    <em:version>0.6</em:version>
+    <em:version>0.6.1</em:version>
     <em:type>2</em:type>
    
     <!-- Target Application this extension can install into, 
