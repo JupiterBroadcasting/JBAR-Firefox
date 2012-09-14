@@ -46,4 +46,4 @@
 	};
 
 	window.getBrowser().addProgressListener(urlChangeListener,Components.interfaces.nsIWebProgress.NOTIFY_STATE_DOCUMENT);
-})();
+}());
