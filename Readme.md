@@ -29,6 +29,6 @@ Want to contribute? Nice! Here's how you can:
 [the Firefox extension documentation](https://developer.mozilla.org/en-US/docs/Extensions/Firefox) to be sure you're not using deprecated methods of doing things.
 
 
-Licence
+License
 ------------
-Licenced under the Simplified BSD Licence, see the LICENCE file for the full text.
+Licensed under the Simplified BSD License, see the LICENSE file for the full text.
