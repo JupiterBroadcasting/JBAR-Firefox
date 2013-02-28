@@ -95,7 +95,8 @@
 				for (var config in configurations) {
 					if (configurations.hasOwnProperty(config)) {
 						if (url.match(configurations[config].rx)) {
-							if (url.indexOf("tag=") === -1) {
+							//gracefully acknowledge existing affiliate tags
+							if (url.indexOf(config.params[0].param) === -1) {
 								win = aWebProgress.DOMWindow;
 								win.document.location.replace(url + (url.indexOf("?") >= 0 ? "&" : "?") + createTag(config.params));
 								break;
