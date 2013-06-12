@@ -18,6 +18,7 @@ Contributing
 
 Want to contribute? Nice! Here's how you can:
 
+
 ### Non-developers
 * Not a coder but still want to help out? Submit an issue over at [the Issue page](https://github.com/rikai/JBAR-Firefox/issues) for any bugs you've found or features you'd like to see!
 
@@ -28,7 +29,11 @@ Want to contribute? Nice! Here's how you can:
 * Also, be sure to read over the documentation available at
 [the Firefox extension documentation](https://developer.mozilla.org/en-US/docs/Extensions/Firefox) to be sure you're not using deprecated methods of doing things.
 
-
 License
 ------------
 Licensed under the Simplified BSD License, see the LICENSE file for the full text.
+
+Todo
+------------
+
+Look into using Add-on Builder and/or Add-on SDK, seems to use a fairly different setup.
