@@ -81,6 +81,14 @@
                                 { param: "PID", paramValue: "4897915" }
                             ]
                         },
+                        woot : {
+                           rx: /^http.*?\.woot\.com.*?\/offers\/.*/i,
+                           params: [
+                                { param: "utm_campaign", paramValue: "Commission+Junction+-+10848750" },
+                                { param: "utm_source", paramValue: "Commission+Junction+Publisher+-+4897915" },
+                                { param: "utm_medium", paramValue: "affiliate+-+Woot%21+Logo" }
+                           ]
+                        },
                         guitarcenter : {
                             rx: /^http.*?\.guitarcenter\.com/i,
                             params: [
