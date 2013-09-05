@@ -24,5 +24,16 @@
     <em:description>Automatically redirects affiliate URLs to add JB affiliate codes.</em:description>
     <em:creator>rikai</em:creator>
     <em:homepageURL>http://www.jupiterbroadcasting.com/</em:homepageURL>
+
+    <!-- Localized descriptions -->
+    <em:translator>rikai (en-US)</em:translator>
+    <em:localized>
+      <Description>
+        <em:locale>en-US</em:locale>
+        <em:name>Jupiter Broadcasting Affiliate Redirect</em:name>
+        <em:description>Automatically redirects affiliate URLs to add JB affiliate codes.</em:description>
+      </Description>
+    </em:localized>
+
   </Description>      
 </RDF>
