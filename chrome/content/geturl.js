@@ -20,16 +20,6 @@
                                 { param: "source", paramValue: "cj_pfm" }
                             ]
                         },
-                        bestbuy : {
-                            rx: /^http.*?\.bestbuy\.com.*?site.*?\?id=/i, 
-                            params: [
-                                { param: "AID", paramValue: "10483113" },
-                                { param: "PID", paramValue: "4897915" },
-                                { param: "ref", paramValue: "39" },
-                                { param: "CJPID", paramValue: "4897915" },
-                                { param: "loc", paramValue: "01" }
-                            ]
-                        },
                         thinkgeek : {
                             rx: /^http.*?\.thinkgeek\.com\/product\//i,
                             params: [
